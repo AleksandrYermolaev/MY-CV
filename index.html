@@ -2,11 +2,134 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+	<title>Aleksandr Yermolaev</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
+
+	<header class="header">
+		<nav class="nav">
+			<ul class="menu">
+				<li class="menu-item"><a href="#about" class="menu-item-link">Summary</a></li>
+				<li class="menu-item"><a href="#skills" class="menu-item-link">Skills</a></li>
+				<li class="menu-item"><a href="#code" class="menu-item-link">Code</a></li>
+				<li class="menu-item"><a href="#projects" class="menu-item-link">My projects</a></li>
+				<li class="menu-item"><a href="#education" class="menu-item-link">Education</a></li>
+				<li class="menu-item"><a href="#english" class="menu-item-link">English</a></li>
+			</ul>
+		</nav>
+		<div class="container"></div>
+			<h1 class="intro"><span class="my-name">Aleksandr</span> Yermolaev</h1>
+			<p class="prof">front-end developer (beginner)</p>
+		</div>
+	</header>
+
+
+	<aside class="aside">
+		<img src="./images/foto.jpg" alt="My foto" class="foto">
+		<section class="contact">
+			<h2>Contact me:</h2>
+			<ul class="contact-list">
+				<li class="contact-item">Email:<a href="mailto: sanyagt50@gmail.com">sanyagt50@gmail.com</a></li>
+				<li class="contact-item">VK:<a href="https://vk.com/sanyagt" target="_blank">Aleksandr Yermolaev</a></li>
+				<li class="contact-item">Telegram:<a href="https://t.me/sin_93" target="_blank">sin_93</a></li>
+				<li class="contact-item">Discord:<a href="https://discord.com/users/328286184348581893" target="_blank">Mista.Sin</a></li>
+			</ul>		
+		</section>
+	</aside>
+
+
+	<main class="main">
+		<div class="container">
+
+			<section class="summary">
+				<h2 id="about">Summary</h2>
+				<p class="summary-text">I am from Donetsk. I have been working in the field of fire safety for the last 6 years. I have been wanting to study programming and development for more than a year, but I have always lacked motivation. After hearing about the RS School courses and getting a lot of positive feedback, I just got excited about it. I have an analytical mindset, and my professional activity has developed in me the skills of attention to detail and exactingness to myself. I hope these qualities will help me achieve my goals.</p>
+			</section>
+
+			<section class="skills">
+				<h2 id="skills">Skills</h2>
+				<div class="skills-text">
+					<p class="hard">Hard skills</p>
+						<ul class="hard-list">
+						<li class="hard-item">HTML, CSS</li>
+						<li class="hard-item">Photoshop</li>
+						<li class="hard-item">Zeplin</li>
+						<li class="hard-item">Git (GitHub)</li>
+						<li class="hard-item">VS Code</li>
+					</ul>
+					<p class="soft">Soft skills</p>
+						<ul class="soft-list">
+						<li class="soft-item">Fast learning / lifelong education</li>
+						<li class="soft-item">Responsible, punctual, executive</li>
+						<li class="soft-item">Stress resistant</li>
+						<li class="soft-item">Openness to criticism</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="code">
+				<h2 id="code">Code examples</h2>
+				<!-- include code highlighter -->
+				<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(40, 43, 46); color: rgb(224, 226, 228);">
+				<span class="hljs-selector-tag" style="color: rgb(147, 199, 99); font-weight: 700;">body</span> {
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">background</span>: <span class="hljs-built_in" style="color: rgb(140, 187, 173);">url</span>(../img/lines.png) <span class="hljs-number" style="color: rgb(255, 205, 34);">50%</span> <span class="hljs-number" style="color: rgb(255, 205, 34);">100px</span> no-repeat, <span class="hljs-number" style="color: rgb(255, 205, 34);">#e8e8e8</span>;
+				}
+				<span class="hljs-selector-class" style="color: rgb(160, 130, 189);">.content</span> {
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">max-width</span>: <span class="hljs-number" style="color: rgb(255, 205, 34);">1190px</span>;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">margin</span>: <span class="hljs-number" style="color: rgb(255, 205, 34);">0</span> auto;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">text-align</span>: center;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">font-family</span>: <span class="hljs-string" style="color: rgb(236, 118, 0);">"Times New Roman"</span>, Times, Baskerville, Georgia, serif;
+				}
+				<span class="hljs-selector-class" style="color: rgb(160, 130, 189);">.content-top__title</span> {
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">margin</span>: <span class="hljs-number" style="color: rgb(255, 205, 34);">106px</span> <span class="hljs-number" style="color: rgb(255, 205, 34);">0</span> <span class="hljs-number" style="color: rgb(255, 205, 34);">10px</span> <span class="hljs-number" style="color: rgb(255, 205, 34);">0</span>;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">text-transform</span>: uppercase;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">font-family</span>: Arial, <span class="hljs-string" style="color: rgb(236, 118, 0);">"Helvetica Neue"</span>, Helvetica, sans-serif;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">font-size</span>: <span class="hljs-number" style="color: rgb(255, 205, 34);">14px</span>;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">line-height</span>: <span class="hljs-number" style="color: rgb(255, 205, 34);">2.86</span>;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">letter-spacing</span>: <span class="hljs-number" style="color: rgb(255, 205, 34);">2.8px</span>;
+					<span class="hljs-attribute" style="color: rgb(102, 139, 176);">color</span>: <span class="hljs-built_in" style="color: rgb(140, 187, 173);">rgba</span>(39, 61, 70, 0.6);
+				}</pre>
+				<!-- code highlighter end -->
+			</section>
+
+			<section class="projects">
+				<h2 id="projects">My projects</h2>
+				<p class="project-text">Look at my very first <span class="project-accent">project layout</span></p>
+				<a href="https://github.com/AleksandrYermolaev/study_first_layout" class="project-button" target="_blank">Let's see</a>
+			</section>
+
+			<section class="education">
+				<h2 id="education">Education</h2>
+				<ul class="education-list">
+					<li class="education-item">2014 Ukraine Academy of сustoms, bachelor</li>
+					<li class="education-item">2015 University of customs and finance, master's degree</li>
+					<li class="education-item">2020 Аcademy of civil protection, specialist qualification</li>
+					<li class="education-item">The Rollong Scope School courses: * JS/FE Stage 0 * … to be continued…</li>
+				</ul>
+			</section>
+
+			<section class="english">
+				<h2 id="english">English</h2>
+				<p class="english-b2">B2 Upper Intermediate on Listening Section</p>
+				<p class="english-c1">C1 Advanced on Reading Section</p>
+				<a href="https://www.efset.org/cert/fdFwvR" class="english-link" target="_blank">See full certificate</a>
+				<img src="./images/english.png" alt="English certificate" class="certificate">
+			</section>
+		</div>
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<p class="footer-text">&copy; 2022 <a href="https://github.com/AleksandrYermolaev" class="github-link"	target="_blank">AleksandrYermolaev</a></p>
+			<a href="https://rs.school/js-stage0/" class="rs-school-link" target="_blank"><img src="./icons/rs-school.svg" alt="rs-school icon" class="rs-school"></a>
+		</div>
+	</footer>
 </body>
 </html>

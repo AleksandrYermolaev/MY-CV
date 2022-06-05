@@ -15,3 +15,190 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+@font-face {
+	font-family: Montserrat;
+	src: url("./fonts/Montserrat.ttf");
+}
+@font-face {
+	font-family: LeagueSpartan;
+	src: url("./fonts/LeagueSpartan.ttf");
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1000px;
+	background: #181a1b;
+	font-family: LeagueSpartan, sans-serif;
+	font-size: 18px;
+}
+.header {
+}
+.nav {
+	margin: 0px 0px 30px 0px;
+	
+}
+.menu {
+	display: flex;
+	position: fixed;
+	z-index: 1;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 75%;
+	max-width: 1000px;
+	height: 2.5em;
+	background: #282b2e;
+	/* border-left: 5px solid #ff5555;
+	border-right: 5px solid #ff5555; */
+	
+}
+.menu-item {
+	
+}
+.menu-item-link {
+	color: #ff5555;
+}
+.container {
+	padding: 0 0 0 230px;
+	background: #282b2e;
+}
+.first-container {
+	height: 377px;
+}
+.intro {
+	margin: 45px 0px 0px 0px;
+	padding: 30px 0 0 0;
+	font-size: 6em;
+}
+.my-name {
+	display: block;
+	font-family: Montserrat, sans-serif;
+	font-size: 1.2em;
+	padding: 20px 0 0 0;
+	text-align: center;
+	color: #f5deb3;
+}
+.my-surname {
+	display: block;
+	text-align: right;
+	padding: 0 65px 0 0;
+	color: #ff5555;
+}
+.prof {
+	margin: 20px 0px 0px 0px;
+	padding: 0 70px 0 0;
+	background: #ff5555;
+	height: 30px;
+	font-size: 25px;
+	line-height: 35px;
+	color: #282b2e;
+	text-align: right;
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 2.5em;
+	max-width: 210px;
+}
+.foto {
+	/* box-shadow: 1px 1px 10px 0px black; */
+}
+.contact {
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
+	
+}
+.contact h2 {
+	font-size: 25px;
+	font-family: Montserrat, sans-serif;
+	color: #ff5555;
+	border-bottom: 2px solid #ff5555;
+	margin: 0px 0px 10px 0px;
+}
+.contact-list li{
+	margin: 0px 0px 10px 0px;
+	
+}
+.contact-item a {
+	color: #f5deb3;
+	padding: 0 0 0 25px;
+	line-height: 20px;
+	
+}
+.contact-item:nth-child(1) {
+	background: url("./icons/email.png") top left/10% no-repeat;
+}
+.contact-item:nth-child(2) {
+	background: url("./icons/vk.png") top left/10% no-repeat;
+}
+.contact-item:nth-child(3) {
+	background: url("./icons/telegram.png") top left/10% no-repeat;
+}
+.contact-item:nth-child(4) {
+	background: url("./icons/dicsord.png") top left/10% no-repeat;
+}
+
+.main .container {
+	background: url(./images/main-back.svg) 210px top/100% 100% no-repeat, #282b2e;
+	
+	
+	
+}
+.summary {
+}
+.summary-text {
+}
+.skills {
+}
+.skills-text {
+}
+.hard {
+}
+.hard-list {
+}
+.hard-item {
+}
+.soft {
+}
+.soft-list {
+}
+.soft-item {
+}
+.code {
+}
+.projects {
+}
+.project-text {
+}
+.project-accent {
+}
+.project-button {
+}
+.education {
+}
+.education-list {
+}
+.education-item {
+}
+.english {
+}
+.english-b2 {
+}
+.english-c1 {
+}
+.english-link {
+}
+.certificate {
+}
+.footer {
+}
+.footer-text {
+}
+.github-link {
+}
+.rs-school-link {
+}
+.rs-school {
+}

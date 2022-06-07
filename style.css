@@ -141,7 +141,7 @@ body {
 }
 
 .main .container {
-	background: url(./images/main-back.svg) 210px top/100% 100% no-repeat, #282b2e;
+	background: url("./images/main-back.svg") 210px top/100% 100% no-repeat, #282b2e;
 	padding: 0 20px 0 230px;
 	text-align: justify;
 }
@@ -217,7 +217,8 @@ body {
 }
 .project-text,
 .project-accent,
-.project-button {
+.project-button,
+.english-link {
 	position: absolute;
 	background-color:#282b2e;
 	padding: 8px 10px;
@@ -246,27 +247,66 @@ body {
 }
 .education {
 }
-.education-list {
-}
+
 .education-item {
+	background: url("./icons/check.png") 0px 3px/20px 20px no-repeat;
+	padding: 0 0 0 30px;
+	font-size: 23px;
+	line-height:30px;
 }
-.english {
+.english-row {
+	display: flex;
+	padding: 0 0 20px 0;
+	
+}
+.english-col {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.english span {
+	display: block;
+	font-size: 30px;
 }
 .english-b2 {
+	
 }
 .english-c1 {
+	padding: 15px 0 0 0;
 }
 .english-link {
+	top: 65%;
+	left: 25%;
+	transition: 0.2s;
+}
+.english-link:hover {
+	top: 64%;
+	left: 20%;
+	font-size: 25px;
 }
 .certificate {
+	max-height: 250px;
+	padding: 0 0 0 100px;
+	
 }
-.footer {
+.footer-row {
+	display: flex;
+	justify-content: space-between;
 }
-.footer-text {
+.footer-text,
+.github-link {
+	font-family: Montserrat, sans-serif;
+	font-size: 25px;
+	align-self: center;
+	color: #f5deb3;
 }
 .github-link {
+	color: #ff5555;
+	padding: 0 200px 0 0;
 }
 .rs-school-link {
 }
 .rs-school {
+	padding: 15px;
+	height: 80px;
 }

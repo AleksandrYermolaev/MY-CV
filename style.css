@@ -65,11 +65,11 @@ body {
 /* button Summary */
 .menu-item-svg1,
 .menu-item-rect1 {
-	position: fixed;
+	position: absolute;
 	width: var(--width);
 	height: var(--height);
 	fill: none;
-	left: 17.3%;
+	left: 5.7%;
 	
 }
 .menu-item-rect1 {
@@ -93,11 +93,11 @@ body {
 /* Button skills */
 .menu-item-svg2,
 .menu-item-rect2 {
-	position: fixed;
+	position: absolute;
 	width: var(--width);
 	height: var(--height);
 	fill: none;
-	left: 28.8%;	
+	left: 21.5%;	
 }
 .menu-item-rect2 {
 	stroke: #ff5555;
@@ -113,11 +113,11 @@ body {
 /* Button Code */
 .menu-item-svg3,
 .menu-item-rect3 {
-	position: fixed;
+	position: absolute;
 	width: var(--width);
 	height: var(--height);
 	fill: none;
-	left: 40.5%;
+	left: 37.3%;
 }
 .menu-item-rect3 {
 	stroke: #ff5555;
@@ -133,11 +133,11 @@ body {
 /* Button My projects */
 .menu-item-svg4,
 .menu-item-rect4 {
-	position: fixed;
+	position: absolute;
 	width: var(--width);
 	height: var(--height);
 	fill: none;
-	left: 52.15%;
+	left: 52.9%;
 }
 .menu-item-rect4 {
 	stroke: #ff5555;
@@ -153,11 +153,11 @@ body {
 /* Button Education */
 .menu-item-svg5,
 .menu-item-rect5 {
-	position: fixed;
+	position: absolute;
 	width: var(--width);
 	height: var(--height);
 	fill: none;
-	left: 63.8%;
+	left: 68.5%;
 }
 .menu-item-rect5 {
 	stroke: #ff5555;
@@ -173,11 +173,11 @@ body {
 /* Button English */
 .menu-item-svg6,
 .menu-item-rect6 {
-	position: fixed;
+	position: absolute;
 	width: var(--width);
 	height: var(--height);
 	fill: none;
-	left: 75.5%;
+	left: 84.3%;
 }
 .menu-item-rect6 {
 	stroke: #ff5555;

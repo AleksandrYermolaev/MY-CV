@@ -1,0 +1,119 @@
+body {
+	background: #111213;
+}
+.sub-header {
+	@include header-decor;
+}
+.text {
+	@include text-decor;
+}
+.main {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	.summary {
+		width: 100%;
+		display: flex;
+
+		.contacts {
+			background-color: $color-dark;
+			padding: 0 1%;
+			flex: 1	1 20%;
+						
+			.contacts__item {
+				display: block;
+				height: 2vw;
+				margin: 0 0 3% 0;
+				padding: 0 0 0 12%;
+				font: {
+					family: $font-sparta;
+					size: 1.4vw;
+				}
+				line-height: 2vw;
+				& a {
+					color: $color-light;
+				}
+				&:first-child {
+					margin-top: 5%;
+					background: url('icons/email.png') center left/10% no-repeat;
+				}
+				&:nth-child(2) {
+					background: url('icons/vk.png') center left/10% no-repeat;
+				}
+				&:nth-child(3) {
+					background: url('icons/telegram.png') center left/10% no-repeat;
+				}
+				&:nth-child(4) {
+					padding: 1.4% 0 0 12%;
+					background: url('icons/dicsord.png') center left/10% no-repeat;
+				}
+			}
+		}
+
+		.about-me {
+			flex: 1	1 80%;
+			background-color: $color-light;
+			padding: 0 1%;
+
+			
+		}
+
+	}
+
+	.skills {
+		@include section-decor;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10%;
+		justify-content: center;
+
+		.sub-header {
+			flex: 1 1 100%;
+		}
+
+		.hard-skills {
+			@extend %skills;
+
+		}
+		
+		.soft-skills {
+			@extend %skills;
+		}
+	}
+
+	.code {
+		@include section-decor;
+
+		.code-examples {
+			display: flex;
+			justify-content: center;
+			gap: 3%;
+
+			code {
+				font-size: 1.1vw;
+				display: block;
+				height: 14vw;
+			}
+		}
+	}
+
+	.projects {
+		@include section-decor;
+
+		.slider-container {
+			width: 90%;
+			margin: 0 auto;
+			// overflow: hidden;
+
+			.slider {
+				// width: 270%;
+				display: flex;
+
+				.project-travel {
+					@extend %slides;
+				}
+			}
+		}
+	}
+}

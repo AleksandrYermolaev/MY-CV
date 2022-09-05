@@ -102,24 +102,29 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.main .projects .slider-container .slider .project-travel {
+.main .projects .slider-container .slider .project-eldrich, .main .projects .slider-container .slider .project-momentum, .main .projects .slider-container .slider .project-travel {
   width: 33.33%;
   position: relative;
 }
-.main .projects .slider-container .slider .project-travel .projects__link {
+.main .projects .slider-container .slider .project-eldrich .projects__link, .main .projects .slider-container .slider .project-momentum .projects__link, .main .projects .slider-container .slider .project-travel .projects__link {
   display: block;
-  border: 10px solid red;
 }
-.main .projects .slider-container .slider .project-travel .image-text {
+.main .projects .slider-container .slider .project-eldrich .projects__link img, .main .projects .slider-container .slider .project-momentum .projects__link img, .main .projects .slider-container .slider .project-travel .projects__link img {
+  width: 100%;
+}
+.main .projects .slider-container .slider .project-eldrich .image-text, .main .projects .slider-container .slider .project-momentum .image-text, .main .projects .slider-container .slider .project-travel .image-text {
   position: absolute;
   left: 5%;
   bottom: 2%;
   width: 50%;
   height: 4vw;
+  line-height: 4vw;
+  padding: 0 0 0 10px;
   background-color: #ff5555;
   font-family: Montserrat, sans-serif;
   font-size: 2.5vw;
   text-shadow: 0px 1px 1px #282b2e;
+  box-shadow: 0px 1px 1px #282b2e;
   color: #f5deb3;
 }
 
@@ -288,10 +293,10 @@ body {
 .main .code .code-examples {
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 2%;
 }
 .main .code .code-examples code {
-  font-size: 1.1vw;
+  font-size: 1vw;
   display: block;
   height: 14vw;
 }
@@ -299,11 +304,120 @@ body {
   width: 100%;
   background-color: #f5deb3;
   padding: 0 1%;
+  padding-bottom: 1%;
+  position: relative;
+}
+.main .projects .click-left {
+  position: absolute;
+  width: 5%;
+  height: 85%;
+  left: 0;
+  background: url("icons/slider-prev.svg") 200%/50px no-repeat;
+}
+.main .projects .click-right {
+  position: absolute;
+  width: 5%;
+  height: 85%;
+  right: 0;
+  background: url("icons/slider-next.svg") 0%/50px no-repeat;
 }
 .main .projects .slider-container {
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 .main .projects .slider-container .slider {
+  width: 300%;
+  position: relative;
   display: flex;
+}
+.main .education {
+  width: 100%;
+  background-color: #f5deb3;
+  padding: 0 1%;
+}
+.main .education .education__menu {
+  padding-bottom: 1%;
+}
+.main .education .education__menu .education__item {
+  padding-left: 3%;
+  padding-bottom: 1%;
+  background: url("icons/check.png") 0 1%/2% no-repeat;
+}
+.main .english {
+  width: 100%;
+  background-color: #f5deb3;
+  padding: 0 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .english .sub-header {
+  flex: 1 1 100%;
+}
+.main .english .left-side {
+  flex: 0 1 50%;
+}
+.main .english .left-side .large {
+  font-family: LeagueSpartan, sans-serif;
+  font-size: 3vw;
+}
+.main .english .left-side .button {
+  position: relative;
+  left: 20%;
+  top: 15%;
+  display: block;
+  width: 40%;
+  height: 20%;
+  background-color: #ff5555;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #1c1d21;
+  transition: 0.5s ease;
+  font-family: LeagueSpartan, sans-serif;
+  font-size: 1.6vw;
+  line-height: 1.15;
+  color: #1c1d21;
+}
+.main .english .left-side .button a {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .english .left-side .button:hover {
+  color: #f5deb3;
+  background-color: #1c1d21;
+}
+.main .english .right-side {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+}
+.main .english .right-side .certificate {
+  width: 50%;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1c1d21;
+}
+.footer .footer-container {
+  padding: 1% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container .footer-text {
+  font-family: Montserrat, sans-serif;
+  font-size: 2vw;
+  color: #f5deb3;
+}
+.footer .footer-container .github-link {
+  font-family: Montserrat, sans-serif;
+  font-size: 2vw;
+  color: #ff5555;
+}
+.footer .footer-container .rs-school-link {
+  width: 8%;
 }/*# sourceMappingURL=main.css.map */

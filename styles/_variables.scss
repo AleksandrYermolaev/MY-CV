@@ -31,6 +31,12 @@ $color-bright: #ff5555;
 	padding: 0 1%;
 }
 
+@mixin click-decor {
+	position: absolute;
+	width: 5%;
+	height: 85%;
+}
+
 %skills {
 	flex: 0 1 30%;
 	display: flex;
@@ -65,8 +71,9 @@ $color-bright: #ff5555;
 
 	.projects__link {
 		display: block;
-		border: 10px solid red;
-		
+		img {
+			width: 100%;
+		}
 	}
 
 	.image-text {
@@ -75,12 +82,15 @@ $color-bright: #ff5555;
 		bottom: 2%;
 		width: 50%;
 		height: 4vw;
+		line-height: 4vw;
+		padding: 0 0 0 10px;
 		background-color: $color-bright;
 		font: {
 			family: $font-monte;
 			size: 2.5vw;
 		}
 		text-shadow: 0px 1px 1px #282b2e;
+		box-shadow: 0px 1px 1px #282b2e;	
 		color: $color-light;
 	}
 }

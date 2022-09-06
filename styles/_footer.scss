@@ -1,0 +1,32 @@
+.footer {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $color-dark;
+
+	.footer-container {
+		padding: 1% 3%;
+		display: flex;
+		justify-content: space-between;
+
+		.footer-text {
+			font: {
+				family: $font-monte;
+				size: 2vw;	
+			}
+			color: $color-light;
+		}
+
+		.github-link {
+			font: {
+				family: $font-monte;
+				size: 2vw;	
+			}
+			color: $color-bright;
+		}
+
+		.rs-school-link {
+			width: 8%;
+		}
+	}
+}

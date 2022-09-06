@@ -1,0 +1,92 @@
+.header-desktop {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	background: $color-dark;
+
+	.nav-desktop {
+		width: 100vw;
+		max-width: 1200px;
+		height: 40px;
+		background: $color-dark;
+		position: fixed;
+		z-index: 1;
+		
+		.menu-desktop {
+			display: flex;
+			justify-content: space-around;
+
+			.menu__item-desktop {
+				max-width: 20%;
+				flex-shrink: 1;
+				font: {
+					family: $font-monte;
+					size: 1.5vw;
+				}
+				color: $color-light;
+				text-align: center;
+				line-height: 40px;
+				transition: all 0.5s ease;
+
+				&:hover {
+					color: $color-bright;
+				}
+			}
+		}
+	}
+
+	.header__intro-desktop {
+		width: 100%;
+		margin: 40px 0px 0px 0px;
+		display: flex;
+		align-items: flex-start;
+		
+		.photo {
+			width: 20%;
+		}
+
+		.title-desktop {
+			width: 80%;
+			display: flex;
+			flex-direction: column;
+			font: {
+				family: $font-sparta;
+				size: 11vw;
+			}
+			color: $color-light;
+
+			.surname {
+				font-family: $font-monte;
+				margin: 8% 0 0 0;
+				text-align: center;
+			}
+
+			.name {
+				font-size: 10vw;
+				color: $color-bright;
+				text-align: right;
+				padding: 0 8%;
+			}
+			
+			.profession {
+				display: block;
+				position: relative;
+				left: 3%;
+				width: 97%;
+				height: 2vw;
+				background-color: $color-bright;
+				color: $color-dark;
+				font-size: 1.8vw;
+				line-height: 2vw;
+				text-align: right;
+				padding: 0 10% 0 0;
+			}
+		}
+	}
+}
+
+.header-mobile {
+	display: none;
+}

@@ -1,0 +1,228 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: #111213;
+}
+.sub-header {
+	@include header-decor;
+}
+.text {
+	@include text-decor;
+}
+.first-slide {
+	left: 0;
+}
+.second-slide {
+	left: -100%;
+}
+.third-slide {
+	left: -200%;
+}
+.main {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	.summary {
+		width: 100%;
+		display: flex;
+
+		.contacts {
+			background-color: $color-dark;
+			padding: 0 1%;
+			flex: 1	1 20%;
+						
+			.contacts__item {
+				display: block;
+				height: 2vw;
+				margin: 0 0 3% 0;
+				padding: 0 0 0 12%;
+				font: {
+					family: $font-sparta;
+					size: 1.4vw;
+				}
+				line-height: 2vw;
+				& a {
+					color: $color-light;
+				}
+				&:first-child {
+					margin-top: 5%;
+					background: url('icons/email.png') center left/10% no-repeat;
+				}
+				&:nth-child(2) {
+					background: url('icons/vk.png') center left/10% no-repeat;
+				}
+				&:nth-child(3) {
+					background: url('icons/telegram.png') center left/10% no-repeat;
+				}
+				&:nth-child(4) {
+					padding: 1.4% 0 0 12%;
+					background: url('icons/dicsord.png') center left/10% no-repeat;
+				}
+			}
+		}
+
+		.about-me {
+			flex: 1	1 80%;
+			background-color: $color-light;
+			padding: 0 1%;
+
+			
+		}
+
+	}
+
+	.skills {
+		@include section-decor;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10%;
+		justify-content: center;
+
+		.sub-header {
+			flex: 1 1 100%;
+		}
+
+		.hard-skills {
+			@extend %skills;
+
+		}
+		
+		.soft-skills {
+			@extend %skills;
+		}
+	}
+
+	.code {
+		@include section-decor;
+
+		.code-examples {
+			display: flex;
+			justify-content: center;
+			gap: 2%;
+
+			code {
+				font-size: 1vw;
+				display: block;
+				height: 14vw;
+			}
+		}
+	}
+
+	.projects {
+		@include section-decor;
+		padding-bottom: 1%;
+		position: relative;
+
+		.click-left {
+			@include click-decor;
+			left: 0;
+			background: url('icons/slider-prev.svg') 200%/50px no-repeat;
+			cursor: pointer;
+		}
+		
+		.click-right {
+			@include click-decor;
+			right: 0;
+			background: url('icons/slider-next.svg') 0%/50px no-repeat;
+			cursor: pointer;
+		}
+
+		.slider-container {
+			width: 90%;
+			margin: 0 auto;
+			overflow: hidden;
+
+			.slider {
+				width: 300%;
+				position: relative;
+				display: flex;
+				transition: 0.5s ease;
+
+				.project-travel {
+					@extend %slides;
+				}
+
+				.project-momentum {
+					@extend %slides;
+				}
+
+				.project-eldrich {
+					@extend %slides;
+				}
+			}
+		}
+	}
+
+	.education {
+		@include section-decor;
+
+		.education__menu {
+			padding-bottom: 1%;
+
+			.education__item {
+				padding-left: 3%;
+				padding-bottom: 1%;
+				background: url('icons/check.png') 0 1%/2% no-repeat;
+			}
+		}
+	}
+
+	.english {
+		@include section-decor;
+		display: flex;
+		flex-wrap: wrap;
+
+		.sub-header {
+			flex: 1 1 100%;
+		}
+
+		.left-side {
+			flex: 0 1 50%;
+
+			.large {
+				font: {
+					family: $font-sparta;
+					size: 3vw;
+				}
+			}
+			.button {
+				position: relative;
+				left: 20%;
+				top: 15%;
+				display: block;
+				width: 40%;
+				height: 20%;
+				background-color: $color-bright;
+				border-radius: 10px;
+				box-shadow: 2px 2px 2px $color-dark;
+				transition: 0.5s ease;
+				@include text-decor;
+
+				a {
+					display: block;
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+				}
+
+				&:hover {
+					color: $color-light;
+					background-color: $color-dark;
+				}
+			}
+		}
+
+		.right-side {
+			flex: 0 1 50%;
+			display: flex;
+			justify-content: center;
+
+			.certificate {
+				width: 50%;
+			}
+		}
+	}
+}

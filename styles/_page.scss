@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background: #111213;
 }
@@ -6,6 +9,15 @@ body {
 }
 .text {
 	@include text-decor;
+}
+.first-slide {
+	left: 0;
+}
+.second-slide {
+	left: -100%;
+}
+.third-slide {
+	left: -200%;
 }
 .main {
 	width: 100%;
@@ -107,12 +119,14 @@ body {
 			@include click-decor;
 			left: 0;
 			background: url('icons/slider-prev.svg') 200%/50px no-repeat;
+			cursor: pointer;
 		}
 		
 		.click-right {
 			@include click-decor;
 			right: 0;
 			background: url('icons/slider-next.svg') 0%/50px no-repeat;
+			cursor: pointer;
 		}
 
 		.slider-container {
@@ -124,6 +138,7 @@ body {
 				width: 300%;
 				position: relative;
 				display: flex;
+				transition: 0.5s ease;
 
 				.project-travel {
 					@extend %slides;

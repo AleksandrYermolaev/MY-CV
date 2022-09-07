@@ -207,6 +207,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #111213;
 }
@@ -226,6 +230,18 @@ body {
   font-size: 1.6vw;
   line-height: 1.15;
   color: #1c1d21;
+}
+
+.first-slide {
+  left: 0;
+}
+
+.second-slide {
+  left: -100%;
+}
+
+.third-slide {
+  left: -200%;
 }
 
 .main {
@@ -313,6 +329,7 @@ body {
   height: 85%;
   left: 0;
   background: url("icons/slider-prev.svg") 200%/50px no-repeat;
+  cursor: pointer;
 }
 .main .projects .click-right {
   position: absolute;
@@ -320,6 +337,7 @@ body {
   height: 85%;
   right: 0;
   background: url("icons/slider-next.svg") 0%/50px no-repeat;
+  cursor: pointer;
 }
 .main .projects .slider-container {
   width: 90%;
@@ -330,6 +348,7 @@ body {
   width: 300%;
   position: relative;
   display: flex;
+  transition: 0.5s ease;
 }
 .main .education {
   width: 100%;
